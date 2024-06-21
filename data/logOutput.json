@@ -1,0 +1,82 @@
+[
+  {
+    "time_window": "1623456000-1623459600",
+    "url": "/gps",
+    "total_requests": 1,
+    "avg_bytes_sent": 1024,
+    "status_code_counts": {
+      "200": 1
+    }
+  },
+  {
+    "time_window": "1623456000-1623459600",
+    "url": "/tracker-recap",
+    "total_requests": 1,
+    "avg_bytes_sent": 2048,
+    "status_code_counts": {
+      "200": 1
+    }
+  },
+  {
+    "time_window": "1623456000-1623459600",
+    "url": "/rfid-scan",
+    "total_requests": 1,
+    "avg_bytes_sent": 512,
+    "status_code_counts": {
+      "201": 1
+    }
+  },
+  {
+    "time_window": "1623456000-1623459600",
+    "url": " /gps",
+    "total_requests": 2,
+    "avg_bytes_sent": 1024,
+    "status_code_counts": {
+      "200": 2
+    }
+  },
+  {
+    "time_window": "1623456000-1623459600",
+    "url": " /tracker-recap",
+    "total_requests": 3,
+    "avg_bytes_sent": 2048,
+    "status_code_counts": {
+      "200": 3
+    }
+  },
+  {
+    "time_window": "1623456000-1623459600",
+    "url": " /rfid-scan",
+    "total_requests": 3,
+    "avg_bytes_sent": 512,
+    "status_code_counts": {
+      "201": 3
+    }
+  },
+  {
+    "time_window": "1623456000-1623459600",
+    "url": " /gps ",
+    "total_requests": 1,
+    "avg_bytes_sent": 1024,
+    "status_code_counts": {
+      "200": 1
+    }
+  },
+  {
+    "time_window": "1623459600-1623463200",
+    "url": " /gps",
+    "total_requests": 1,
+    "avg_bytes_sent": 1024,
+    "status_code_counts": {
+      "200": 1
+    }
+  },
+  {
+    "time_window": "1623459600-1623463200",
+    "total_requests": 1,
+    "avg_bytes_sent": null,
+    "status_code_counts": {
+      "NaN": 1
+    }
+  }
+]
