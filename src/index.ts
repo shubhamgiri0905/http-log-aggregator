@@ -1,6 +1,6 @@
 // src/index.ts
 
-import { parseCSV } from './utils';
+import { parseLogFile } from './utils';
 import { aggregateLogs } from './aggregator';
 import fs from 'fs';
 import path from 'path';
@@ -15,13 +15,13 @@ if (!inputFilePath || !outputFilePath) {
     process.exit(1);
 }
 
-parseCSV(inputFilePath)
+parseLogFile(inputFilePath)
     .then((logs) => {
         const aggregatedData = aggregateLogs(logs, windowSize);
         fs.writeFileSync(outputFilePath, JSON.stringify(aggregatedData, null, 2));
         console.log('Aggregation complete. Output written to', outputFilePath);
     })
     .catch((error) => {
-        console.error('Error processing CSV file:', error);
+        console.error('Error processing log file:', error);
         process.exit(1);
     });

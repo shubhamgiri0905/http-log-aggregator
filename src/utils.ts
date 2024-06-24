@@ -4,7 +4,7 @@ import fs from 'fs';
 import csv from 'csv-parser';
 import { LogEntry } from './types';
 
-export const parseCSV = (filePath: string): Promise<LogEntry[]> => {
+export const parseLogFile = (filePath: string): Promise<LogEntry[]> => {
     return new Promise((resolve, reject) => {
         const results: LogEntry[] = [];
         fs.createReadStream(filePath)

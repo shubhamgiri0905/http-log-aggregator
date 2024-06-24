@@ -4,8 +4,6 @@ import { LogEntry, AggregatedData } from './types';
 import { formatTimeWindow } from './utils';
 
 export const aggregateLogs = (logs: LogEntry[], windowSize: number): AggregatedData[] => {
-    logs.sort((a, b) => a.timestamp - b.timestamp);
-
     const aggregatedData: AggregatedData[] = [];
     const windowSizeInSeconds = windowSize * 60;
 
@@ -15,7 +13,7 @@ export const aggregateLogs = (logs: LogEntry[], windowSize: number): AggregatedD
     let windowData: { [key: string]: AggregatedData } = {};
 
     logs.forEach((log) => {
-        if (log.timestamp >= currentWindowEnd) {
+        while (log.timestamp >= currentWindowEnd) {
             // Push the aggregated data for the current window
             aggregatedData.push(...Object.values(windowData));
             // Reset the window
